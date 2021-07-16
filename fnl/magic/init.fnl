@@ -41,34 +41,28 @@
 (plugin.use
   :Olical/aniseed {}
   :Olical/conjure {}
-  :PeterRincker/vim-argumentative {}
   :airblade/vim-gitgutter {}
-  :clojure-vim/clojure.vim {}
   :clojure-vim/vim-jack-in {}
+  :eraserhd/parinfer-rust {:run "cargo build --release"}
   :easymotion/vim-easymotion {}
+  :ntpeters/vim-better-whitespace {}
+  :luochen1990/rainbow {:config (plugin.req :rainbow)}
   :folke/which-key.nvim {}
-  :guns/vim-sexp {}
   :hrsh7th/nvim-compe {}
-  :itchyny/lightline.vim {}
-  :jiangmiao/auto-pairs {:config (plugin.req :auto-pairs)}
   :junegunn/fzf {}
   :junegunn/fzf.vim {}
   :liuchengxu/vim-better-default {:config (plugin.req :better-default)}
   :mbbill/undotree {}
   :radenling/vim-dispatch-neovim {}
-  :srcery-colors/srcery-vim {:config (plugin.req :srcery)}
+  :projekt0n/github-nvim-theme {:mod :github}
   :tami5/compe-conjure {}
-  :tpope/vim-abolish {}
-  :tpope/vim-commentary {}
-  :tpope/vim-dispatch {}
-  :tpope/vim-eunuch {}
-  :tpope/vim-fugitive {}
-  :tpope/vim-repeat {}
-  :tpope/vim-sexp-mappings-for-regular-people {}
-  :tpope/vim-sleuth {}
-  :tpope/vim-surround {}
-  :tpope/vim-unimpaired {}
-  :tpope/vim-vinegar {}
-  :w0rp/ale {:config (plugin.req :ale)}
-  :wbthomason/packer.nvim {}
-  )
+  :neovim/nvim-lspconfig {:config (plugin.req :nvim-lspconfig)}
+  :clojure-lsp/clojure-lsp {}
+  ;:tpope/vim-abolish {}
+  ;:tpope/vim-commentary {}
+  ;:tpope/vim-dispatch {}
+  ;:tpope/vim-eunuch {}
+  ;:tpope/vim-fugitive {}
+  ;:tpope/vim-sleuth {}
+  ;:tpope/vim-vinegar {}
+  :wbthomason/packer.nvim {})
